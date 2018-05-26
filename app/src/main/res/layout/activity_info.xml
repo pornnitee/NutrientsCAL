@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:padding="15dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:padding="5dp">
+            <TableRow>
+            <TextView
+                android:layout_span="2"
+                android:textColor="#706b6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="17sp"
+                />
+             <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลส่วนตัว"
+                android:textSize="26sp"
+                android:textColor="#ffff"
+                android:layout_marginBottom="15dp"/>
+
+                <Button
+                    android:id="@+id/edit"
+                    android:gravity="right"
+                    android:background="@drawable/ic_settings"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp" />
+
+            </TableRow>
+            </TableLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_login">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Username :"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Email :"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Weight :"
+                    android:inputType=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Height :"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Age :"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#ff5c33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Gender :"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        </FrameLayout>
+
+
+</LinearLayout>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="แก้ไขข้อมูลส่วนตัว" />
+    </LinearLayout>-->
+
+
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bghome_button"
+        android:text="Log Out"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="250dp"
+        android:textColor="#ffff" />
+
+</LinearLayout>

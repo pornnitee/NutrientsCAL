@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:padding="15dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="แก้ไขข้อมูลส่วนตัว"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_login">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Username :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Password :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/textViewPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="textPassword"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Email :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Weight :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/textViewWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="number"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Height :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/textViewHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="number"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Age :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    <EditText
+                        android:id="@+id/textViewAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="number"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:textColor="#ff5c33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Gender :"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    <RadioGroup
+                        android:id="@+id/textViewGender"
+                        android:background="@drawable/background_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/male"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Male"/>
+
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Female   "/>
+
+
+                    </RadioGroup>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bghome_button"
+                        android:padding="10dp"
+                        android:text="เรียบร้อย"
+                        android:textColor="#ffff"
+                        android:textSize="15sp"
+                        android:layout_gravity="right"
+                        android:layout_column="1"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

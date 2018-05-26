@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NutrientCAL</string>
+
+    <string-array name="planets_array">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+
+    </string-array>
+
+</resources>

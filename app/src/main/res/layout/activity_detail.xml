@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/nameMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื่ออาหาร"
+            android:textColor="#e76859"
+            android:background="@drawable/background_login"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnDate"
+                android:background="@drawable/ic_date_range"
+                android:padding="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/tvDate"
+                android:hint="เลือกวันที่รับประทาน"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                style="@style/style_Spinner"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/err_ing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="ส่วนประกอบ"
+                android:textColor="#fff"/>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_login"
+                android:layout_marginTop="10dp">
+                <ListView
+                    android:id="@+id/ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:smoothScrollbar="true"
+                    android:layout_margin="3dp"
+                    android:paddingBottom="70dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/background_login"
+                    >
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:collapseColumns="*">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="- - - - - - Swipe to delete - - - - - -"
+                                android:layout_gravity="top"
+                                android:textColor="#ff5c33"
+                                android:layout_weight="2"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                />
+                        </TableRow>
+                        <TableRow>
+                            <Button
+                                android:id="@+id/addItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bghome_button"
+                                android:padding="10dp"
+                                android:text="เพิ่ม"
+                                android:textColor="#ffff"
+                                android:textSize="15sp"
+                                android:layout_margin="4dp"
+                                android:textStyle="bold"
+                                />
+                            <Button
+                                android:id="@+id/ok"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bghome_button"
+                                android:padding="10dp"
+                                android:text="ok"
+                                android:textColor="#ffff"
+                                android:textSize="15sp"
+                                android:layout_margin="4dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

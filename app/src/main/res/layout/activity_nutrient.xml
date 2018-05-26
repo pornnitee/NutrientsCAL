@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่ออาหาร"
+                android:textColor="#ffff"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@drawable/background_login">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:padding="10dp">
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="ปริมาณพลังงานที่ได้รับ"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/energy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:gravity="right"
+                            android:padding="2dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_span="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:text="Kcal."
+                            />
+                    </TableRow>
+
+
+
+                    <TextView
+                        android:textColor="#706b6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15dp"
+                        android:text="ปริมาณสารอาหารที่ให้พลังงาน"
+                        />
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Protein"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:id="@+id/protein"
+                            android:layout_span="3"
+                            android:gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_span="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:text="g."
+                            />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Fat"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:id="@+id/fat"
+                            android:layout_span="3"
+                            android:gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_span="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:text="g."
+                            />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Carbohydrate"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:id="@+id/carbohydrate"
+                            android:layout_span="3"
+                            android:gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_span="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:text="g."
+                            />
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:textColor="#706b6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15dp"
+                        android:text="ปริมาณสารอาหารที่ไม่ให้พลังงาน"
+                        />
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Iron"
+                            android:textSize="15sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/iron"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_span="3"
+                            android:gravity="right"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_span="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="mg." />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:textColor="#ff5c33"
+                            android:textStyle="bold"
+                            android:layout_span="4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Calcium"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:id="@+id/calcium"
+                            android:layout_span="3"
+                            android:gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_span="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:text="mg."
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

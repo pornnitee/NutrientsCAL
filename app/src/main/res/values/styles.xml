@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    
+
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/clrDatePrimary</item>
+        <item name="colorPrimaryDark">@color/clrDatePrimaryDark</item>
+        <item name="colorAccent">@color/clrDateAccent</item>
+    </style>
+
+    <style name="style_Spinner">
+        <item name="android:dropDownSelector">@android:color/transparent</item>
+        <item name="android:popupBackground">#e97e66</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+</resources>
