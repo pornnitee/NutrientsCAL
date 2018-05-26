@@ -6,8 +6,6 @@ package com.example.starius.project;
 
 public class URLs {
 
-    //public  static final String HOST_URL = "http://192.168.1.36/php_files/";    //192.168.1.104     192.168.1.38/php_files/
-
     public  static final String HOST_URL = "http://projectmc.azurewebsites.net/";
 
     private static final String ROOT_URL = HOST_URL + "Api.php?apicall=";
